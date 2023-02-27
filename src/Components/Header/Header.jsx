@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 
 const Header = () => {
     return (
-        <div className={styles.div}>
+        <div className={styles.headerStyle}>
             Header
         </div>
     );

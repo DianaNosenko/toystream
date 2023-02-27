@@ -3,8 +3,8 @@ import styles from './Sidebar.module.css'
 
 const Sidebar = () => {
     return (
-        <div className={styles.div}>
-            Sidebar
+        <div className={styles.sidebarStyle}>
+            Sidebar 
         </div>
     );
 }

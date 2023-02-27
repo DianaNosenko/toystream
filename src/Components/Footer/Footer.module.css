@@ -1,3 +1,5 @@
-.div {
+.footerStyle {
     background-color: rgb(223, 255, 127);
+    grid-area: f;
+
 }

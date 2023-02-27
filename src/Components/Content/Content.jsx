@@ -3,7 +3,7 @@ import styles from './Content.module.css'
 
 const Content = () => {
     return (
-        <div className={styles.div}>
+        <div className={styles.contentStyle}>
             Content
         </div>
     );
