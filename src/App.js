@@ -4,9 +4,9 @@ import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
 
-function App() {
+const App = () => {
   return (
-    <div className={styles.App}>
+    <div className={styles.app_grid}>
       <Header className={styles.headerStyle}/>
       <Sidebar className={styles.sidebarStyle}/>
       <Content className={styles.contentStyle}/>

@@ -1,4 +1,27 @@
 .headerStyle {
-    background-color: rgb(255, 178, 127);
+    background-color: #FFEA2F;
     grid-area: h;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.headerNav {
+    width: 643px;
+    display: flex;
+    justify-content: space-between;
+}
+.headerNav a {
+    color: #000000;
+    text-decoration: none;
+
+}
+.headerButton {
+    background-color: #CE0002;
+    height: 120px;
+    width: 120px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    margin-left: 95px;
 }
