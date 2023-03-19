@@ -6,11 +6,10 @@ import Games from './Games/Games'
 import Career from './Career/Career'
 import News from './News/News'
 import Contact from './Contact/Contact'
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 
 const Content = () => {
     return (
-        <BrowserRouter>
             <div className={styles.contentStyle}>
                 <Routes>
                     <Route path="/home" element={<Home/>}/>
@@ -21,7 +20,6 @@ const Content = () => {
                     <Route path="/contact-us" element={<Contact/>}/>
                 </Routes>
             </div>
-        </BrowserRouter>
     );
 }
 

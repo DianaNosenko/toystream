@@ -1,15 +1,17 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+
 
 const Navigation = (props) => {
     const {className} = props;
     return (
         <div className={props.className}>
-                <a href="/home">Home</a>
-                <a href="/about-us">About us</a>
-                <a href="/games">Games</a>
-                <a href="/career">Career</a>
-                <a href="/news">News</a>
-                <a href="/contact-us">Contact us</a>
+                <Link  to="/home">Home</Link>
+                <Link  to="/about-us">About us</Link>
+                <Link  to="/games">Games</Link>
+                <Link  to="/career">Career</Link>
+                <Link  to="/news">News</Link>
+                <Link  to="/contact-us">Contact us</Link>
         </div>
     );
 }
