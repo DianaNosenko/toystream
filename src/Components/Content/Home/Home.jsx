@@ -1,9 +1,10 @@
 import React from 'react';
+import Unicorn from './Unicorn';
 
 const Home = () => {
     return (
         <div>
-            Home
+            <Unicorn/>
         </div>
     );
 }
