@@ -10,11 +10,15 @@
     margin-top: 31px;
 }
 
-.icons { 
+.sidebarIcons { 
     display: flex;
     flex-direction: column;
     margin-left:  92px;
 }
-.icons a {
+.sidebarIcons a {
     margin-top: 22px;
+
+}
+.sidebarIcons a img {
+    width: 28px;
 }

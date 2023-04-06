@@ -18,3 +18,15 @@
     color: #7E7E7E;
     text-decoration: none;
 }
+
+.footerIcons {
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+.footerIcons a img {
+    width: 21px;
+
+}
