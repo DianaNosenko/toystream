@@ -6,7 +6,7 @@ const Navigation = (props) => {
     const {className} = props;
     return (
         <div className={props.className}>
-                <Link  to="/home">Home</Link>
+                <Link  to="/">Home</Link>
                 <Link  to="/about-us">About us</Link>
                 <Link  to="/games">Games</Link>
                 <Link  to="/career">Career</Link>

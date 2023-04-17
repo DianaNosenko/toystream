@@ -12,7 +12,7 @@ const Content = () => {
     return (
             <div className={styles.contentStyle}>
                 <Routes>
-                    <Route path="/home" element={<Home/>}/>
+                    <Route path="/" element={<Home/>}/>
                     <Route path="/about-us" element={<About/>}/>
                     <Route path="/games" element={<Games/>}/>
                     <Route path="/career" element={<Career/>}/>
