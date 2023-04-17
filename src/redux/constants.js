@@ -1,0 +1,3 @@
+export const SET_LANG = 'SET_LANG';
+export const SET_LANG_SUCCESS = 'SET_LANG_SUCCESS';
+export const SET_LANG_FAILURE = 'SET_LANG_FAILURE';

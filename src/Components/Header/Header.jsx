@@ -1,14 +1,34 @@
 import React from 'react';
 import styles from './Header.module.css' 
 import Navigation from '../Navigation/Navigation';
+import {setLang} from '../../redux/actions/actionCreator'
+import { useTranslation } from 'react-i18next';
+import { connect } from 'react-redux';
 
-const Header = () => {
+const Header = (props) => {
+    const {lang, setLang} = props;
+   
+    const langSwitcher = () => {
+        if (lang === 'en') {
+            setLang('ru');
+        } else if (lang === 'ru') {
+            setLang('en');
+        }
+
+    };
+    const {t} = useTranslation();
+
     return (
         <div className={styles.headerStyle}>
             <Navigation className={styles.headerNav}/>
-            <button className={styles.headerButton}>eng</button>
+            <button onClick={langSwitcher} className={styles.headerButton}>
+                {lang === 'ru' ? t('en') : t('ru')}
+            </button>
         </div>
+
     );
 }
+const mapDispatchToProps = {setLang}
+const mapStateToProps = (state) => state.langReducer
 
-export default Header;
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
