@@ -1,8 +1,5 @@
 {
-    "Welcome" : "Welcome",
-    "Test text" : "Test text",
-    "en" : "en",
-    "ru" : "ru",
-    "change" : "change",
-    "About": "About"
+    "Home_heading": "We create mobile games that you play",
+    "Home_button": "Learn more",
+    "Home_subheading": "«Original ideas, quality implementation of game mechanics and attention to interface details are our main principles.»"
 }
