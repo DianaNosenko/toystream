@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Akrobat';
+	font-display: swap;
+	src: url('/src/fonts/Akrobat_SemiBold/Akrobat_Semi_Bold.eot');
+	src: local('O'), url('/src/fonts/Akrobat_SemiBold/Akrobat_Semi_Bold.woff') format('woff'), 
+			url('/src/fonts/Akrobat_SemiBold/Akrobat_Semi_Bold.ttf') format('truetype'), 
+			url('/src/fonts/Akrobat_SemiBold/Akrobat_Semi_Bold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Akrobat';
+	font-display: swap;
+	src: url('/src/fonts/Akrobat_Bold/Akrobat_Bold.eot');
+	src: local('O'), url('/src/fonts/Akrobat_Bold/Akrobat_Bold.woff') format('woff'), 
+			url('/src/fonts/Akrobat_Bold/Akrobat_Bold.ttf') format('truetype'), 
+			url('/src/fonts/Akrobat_Bold/Akrobat_Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Akrobat';
+	font-display: swap;
+	src: url('/src/fonts/Akrobat_ExtraBold/Akrobat_Extra_Bold.eot');
+	src: local('O'), url('/src/fonts/Akrobat_ExtraBold/Akrobat_Extra_Bold.woff') format('woff'), 
+			url('/src/fonts/Akrobat_ExtraBold/Akrobat_Extra_Bold.ttf') format('truetype'), 
+			url('/src/fonts/Akrobat_ExtraBold/Akrobat_Extra_Bold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ZonaPro';
+	font-display: swap;
+	src: url('/src/fonts/ZonaPro_ExtraBold/ZonaPro-ExtraBold.eot');
+	src: local('O'), url('/src/fonts/ZonaPro_ExtraBold/ZonaPro-ExtraBold.woff') format('woff'), 
+			url('/src/fonts/ZonaPro_ExtraBold/ZonaPro-ExtraBold.ttf') format('truetype'), 
+			url('/src/fonts/ZonaPro_ExtraBold/ZonaPro-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
