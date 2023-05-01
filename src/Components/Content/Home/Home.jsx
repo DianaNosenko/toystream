@@ -2,7 +2,7 @@ import React from 'react';
 import Unicorn from './Unicorn';
 import styles from './Home.module.scss' 
 import { useTranslation } from 'react-i18next';
-import {Link} from 'react-router-dom'
+import RedButton from '../../RedButton/RedButton';
 
 const Home = () => {
     const {t} = useTranslation();
@@ -11,12 +11,12 @@ const Home = () => {
             <div className={styles.homeInfoWrapper}>
                 <section className={styles.homeHeading}>{t('Home_heading')}</section>
                 <section className={styles.homeMoreInfoWrapper}>
-                    <Link  to="/about-us">
-                        <button className={styles.homeMoreInfoButton}>
-                            {t('Home_button')}
-                            <img src="/homepage_arrow.svg" alt="#" srcset="" />
-                        </button>
-                    </Link>
+                    <RedButton 
+                    className={styles.homeMoreInfoButton}
+                    buttonLink={'/about-us'}
+                    buttonText={'Home_button'}
+                    buttonArrowSrc={"/homepage_arrow.svg"}
+                    />
                     <div className={styles.homeSubHeading}>{t('Home_subheading')}</div>
                 </section>
             </div>
