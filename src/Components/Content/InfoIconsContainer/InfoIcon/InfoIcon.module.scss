@@ -1,0 +1,47 @@
+$cell-size: 137px;
+$cell-size-neg: -137px;
+$indent-size: 25px;
+
+@keyframes animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-50px, 0);
+    }
+    50% {
+        transform: translate(-50px, 50px);
+    }
+    75% {
+        transform: translate(0, 50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.iconContainer {
+    width: $cell-size;
+    height: $cell-size;
+    background-color: #E8D935;
+    position: relative;
+    z-index: 10;
+
+}
+
+.animatedFone {
+    width: $cell-size;
+    height: $cell-size;
+    background-color: #F2E33A;
+    margin-top: calc($cell-size-neg - $indent-size);
+    margin-left: $indent-size;
+    position: absolute;
+    animation: animation 12s linear infinite;
+}
+
+.iconContainer img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

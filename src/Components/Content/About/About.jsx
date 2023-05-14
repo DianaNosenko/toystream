@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import InfoIconContainer from '../InfoIconsContainer/InfoIconContainer';
 
 
 const About = () => {
@@ -7,6 +8,7 @@ const About = () => {
     return (
         <div>
            {t('About')}
+           <InfoIconContainer/>
         </div>
     );
 }
