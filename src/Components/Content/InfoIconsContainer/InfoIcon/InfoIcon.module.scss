@@ -1,6 +1,8 @@
-$cell-size: 137px;
-$cell-size-neg: -137px;
-$indent-size: 25px;
+@import '/src/variables.scss';
+
+.infoIconWrap {
+    width: 50%;
+}
 
 @keyframes animation {
     0% {
@@ -23,7 +25,6 @@ $indent-size: 25px;
 .iconContainer {
     width: $cell-size;
     height: $cell-size;
-    background-color: #E8D935;
     position: relative;
     z-index: 10;
 
@@ -32,7 +33,6 @@ $indent-size: 25px;
 .animatedFone {
     width: $cell-size;
     height: $cell-size;
-    background-color: #F2E33A;
     margin-top: calc($cell-size-neg - $indent-size);
     margin-left: $indent-size;
     position: absolute;
@@ -44,4 +44,18 @@ $indent-size: 25px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+h2 {
+    font-family: Akrobat;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+h4 {
+    color: #646464;
+    font-family: Akrobat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;   
 }

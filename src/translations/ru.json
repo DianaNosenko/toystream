@@ -1,5 +1,19 @@
 {
     "Home_heading":"Мы создаем мобильные игры, в которые ты играешь",
     "Home_button": "Узнать подробнее",
-    "Home_subheading": "«Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.»"
+    "Home_subheading": "«Оригинальные идеи, качество реализации игровых механик и внимание к деталям интерфейса - наши основные принципы.»",
+
+    "About_heading": "О компании",
+    "About_subheading_1":"",
+    "About_subheading_2":"",
+    "About_subheading_3":"",
+
+    "About_icon_heading_1": "2 млрд+",
+    "About_icon_subheading_1": "Установок",
+    "About_icon_heading_2": "500 млн+",
+    "About_icon_subheading_2": "Игроков",
+    "About_icon_heading_3": "250 млн+",
+    "About_icon_subheading_3": "Активных юзеров в месяц",
+    "About_icon_heading_4": "500+",
+    "About_icon_subheading_4": "Сотрудников"
 }

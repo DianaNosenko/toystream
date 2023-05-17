@@ -1,5 +1,21 @@
 {
     "Home_heading": "We create mobile games that you play",
     "Home_button": "Learn more",
-    "Home_subheading": "«Original ideas, quality implementation of game mechanics and attention to interface details are our main principles.»"
+    "Home_subheading": "«Original ideas, quality implementation of game mechanics and attention to interface details are our main principles.»",
+
+    "About_heading": "About company",
+    "About_subheading_1":"",
+    "About_subheading_2":"",
+    "About_subheading_3":"",
+
+    "About_icon_heading_1": "2 billion+",
+    "About_icon_subheading_1": "Downloadings",
+    "About_icon_heading_2": "500 million+",
+    "About_icon_subheading_2": "Players",
+    "About_icon_heading_3": "250 million+",
+    "About_icon_subheading_3": "Active users per month",
+    "About_icon_heading_4": "500+",
+    "About_icon_subheading_4": "Employees"
+
 }
+
