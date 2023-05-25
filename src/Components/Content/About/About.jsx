@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import InfoIconContainer from '../InfoIconsContainer/InfoIconContainer';
+import styles from './About.module.scss' 
+
 
 const About = () => {
     const {t} = useTranslation();
@@ -18,13 +20,18 @@ const About = () => {
     const iconColor = '#E8D935';
     const animatedColor = '#F2E33A';
     return (
-        <div>
-           {t('About_heading')}
-             <InfoIconContainer 
-             iconsDataArray={iconsDataArray} 
-             iconColor={iconColor} 
-             animatedColor={animatedColor}
-             />
+        <div className={styles.aboutWrap}>
+            <div className={styles.aboutLeftContainer}>
+                <div>{t('About_heading')}</div>
+                <div>{t('About_subheading')}</div>
+            </div>
+            <div className={styles.aboutRightContainer}>
+                <InfoIconContainer 
+                iconsDataArray={iconsDataArray} 
+                iconColor={iconColor} 
+                animatedColor={animatedColor}
+                />
+            </div>    
         </div>
     );
 }
