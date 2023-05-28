@@ -3,12 +3,12 @@
 .homePageMain {
     display: flex;  
     height: 800px;
-    min-width: 100%;
+    width: 100%;
     background: linear-gradient(to right,#FFFFFF 275px,#FFEA2F 275px);
 }
 .homePageWrapper {
     display: flex;   
-    justify-content: center;
+    width: inherit;
 }
 
 .homeHeading {

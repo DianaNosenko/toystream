@@ -24,9 +24,10 @@ $DARK-BLUE-VIOLET: #3F2A5E;
  width: $WRAPPER-WIDTH;
  height: $WRAPPER-HEIGHT;
  display: inline-flex;
+ position: absolute;
  flex-wrap: wrap;
  margin-top: 170px;
- margin-right: 20vw;
+ margin-left: 60%;
 } 
 .unicornCell {
     width: $CELL-SIZE;
