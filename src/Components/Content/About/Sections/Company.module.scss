@@ -1,0 +1,36 @@
+@import '/src/variables';
+
+.companyWrap {
+    display: flex; 
+    height: inherit;
+    padding-left: $sidebar-width;
+    padding-top: $header-height;
+    background: linear-gradient(to right,#FFFFFF 50%,#FFEA2F 50%);
+} 
+.companyLeftContainer {
+    width: 600px;
+    height: 512px;
+}
+.companyLeftContainer :first-child {
+    font-family: 'ZonaPro';
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;
+    text-transform: uppercase;
+
+}
+.companyLeftContainer :last-child {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 40px;
+
+}
+.companyRightContainer {
+    padding: 150px;
+    width: 550px;
+    height: 570px;
+    padding-top: 0;
+}
