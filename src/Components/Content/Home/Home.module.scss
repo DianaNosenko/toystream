@@ -1,12 +1,14 @@
 @import '/src/variables';
 
-.homePageWrapper {
-    display: flex;
-    justify-content: space-between;
+.homePageMain {
+    display: flex;  
+    height: 800px;
+    min-width: 100%;
+    background: linear-gradient(to right,#FFFFFF 275px,#FFEA2F 275px);
 }
-
-.homeInfoWrapper {
-    margin-top: 206px;
+.homePageWrapper {
+    display: flex;   
+    justify-content: center;
 }
 
 .homeHeading {
@@ -17,13 +19,14 @@
     text-transform: uppercase;
     width: 1077px;
     height: 255px;
-    margin-left: -$sidebar-width + 88px;
+    margin-left: 86px;
+    margin-top: 270px;
 }
-
 .homeMoreInfoWrapper {
     display: flex;
-    align-items: center;
-    margin-top: 109px; 
+    justify-content: space-between;
+    margin-left: 217px;
+    width: 645px;
 }
 
 .homeSubHeading {
@@ -33,12 +36,9 @@
     line-height: 30px;
     width: 460px;
     height: 90px;
-    margin-left: 66px;
 }
 
 .homeMoreInfoButton {
     width: 120px;
     height: 120px;
-    margin-left: -60px;
-    padding-left: 15px;
 }

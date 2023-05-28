@@ -1,17 +1,9 @@
-@import 'variables';
-
-.app_grid {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: $sidebar-width auto;
-    grid-template-rows: $header-height auto $footer-height;
-    grid-template-areas: 
-    "s h"
-    "s c"
-    "f f"
-    ;
+.app_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1922px;
+    min-height: 100vh;
 }
-
 
 

@@ -8,7 +8,7 @@ import {BrowserRouter} from 'react-router-dom'
 const App = () => {
   return (
     <BrowserRouter>
-    <div className={styles.app_grid}>
+    <div className={styles.app_wrap}>
       <Header className={styles.headerStyle}/>
       <Sidebar className={styles.sidebarStyle}/>
       <Content className={styles.contentStyle}/>

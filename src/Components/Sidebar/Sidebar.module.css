@@ -1,19 +1,17 @@
 .sidebarStyle {
-    grid-area: s;
     display: flex;
+    position: absolute;
     flex-direction: column;
     justify-content: space-between;
+    left: 92px;
+    top: 662px;
+    transform: translateY(-50%);
 
-}
-.logoImage {
-    align-self: center;
-    margin-top: 31px;
 }
 
 .sidebarIcons { 
     display: flex;
     flex-direction: column;
-    margin-left:  92px;
 }
 .sidebarIcons a {
     margin-top: 22px;

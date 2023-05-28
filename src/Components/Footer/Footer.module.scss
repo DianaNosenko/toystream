@@ -1,11 +1,12 @@
+@import '/src/variables';
+
 .footerStyle {
-    grid-area: f;
+    height:  $footer-height;
     background: linear-gradient(#FFFFFF 77px, #EFEFEF 54px);
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding-bottom: 16px;
-
 }
 
 .footerNav {
@@ -28,5 +29,4 @@
 
 .footerIcons a img {
     width: 21px;
-
 }

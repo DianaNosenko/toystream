@@ -1,5 +1,5 @@
 // size constants
-$CELL-SIZE : 26.2px;
+$CELL-SIZE : 20px;
 $WRAPPER-WIDTH: $CELL-SIZE*30;
 $WRAPPER-HEIGHT: $CELL-SIZE*28; 
 
@@ -23,9 +23,9 @@ $DARK-BLUE-VIOLET: #3F2A5E;
 .unicornWrapper {
  width: $WRAPPER-WIDTH;
  height: $WRAPPER-HEIGHT;
- display: flex;
+ display: inline-flex;
  flex-wrap: wrap;
- margin-top: 49px;
+ margin-top: 170px;
  margin-right: 20vw;
 } 
 .unicornCell {

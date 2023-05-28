@@ -20,6 +20,9 @@ const Header = (props) => {
 
     return (
         <div className={styles.headerStyle}>
+            <div className={styles.logoImage}>
+                <img src="/logo.svg" alt="no image:(" />
+            </div>
             <Navigation className={styles.headerNav}/>
             <button onClick={langSwitcher} className={styles.headerButton}>
                 {lang === 'ru' ? t('en') : t('ru')}
