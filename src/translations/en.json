@@ -13,7 +13,22 @@
     "About_icon_heading_3": "250 million+",
     "About_icon_subheading_3": "Active users per month",
     "About_icon_heading_4": "500+",
-    "About_icon_subheading_4": "Employees"
+    "About_icon_subheading_4": "Employees",
+
+    "Team_main_heading": "Our team",
+
+    "Team_heading_1": "Alex Sherman",
+    "Team_subheading_1": "SEO",
+    "Team_description_1":"«Bezos said if you can’t feed your team with two pizzas, you have too big a team. We succeed! And this is our advantage. (-:»",
+    "Team_heading_2": "Alexander Isaev",
+    "Team_subheading_2": "CBDO",
+    "Team_description_2":"«We monitor and analyze the tops of the Apple Store and Goole Play Market every day - in our business it is important to be aware of every detail of the market situation»",
+    "Team_heading_3": "Alexander Negreev",
+    "Team_subheading_3": "Game designer",
+    "Team_description_3":"«Brainstorms sometimes drag on until late at night, but how else to find among hundreds of ideas - the one that is brilliant?»",
+    "Team_heading_4": "Erik Imashev",
+    "Team_subheading_4": "Unity developer",
+    "Team_description_4":"«In every project, it's not just what the player can see that's important, but what's under the hood. Instant response and timely saved game are very much appreciated by the players»"
 
 }
 

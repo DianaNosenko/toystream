@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import styles from './Slider.module.scss' 
+import { useTranslation } from 'react-i18next';
 
-const Slider = ({ sliderInfo }) => {
+const Slider = (props) => {
+  const {sliderInfo, teamHeading} = props;
+  const {t} = useTranslation();
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [leftArrowColor, setLeftArrowColor] = useState('#C3B6B6');
   const [rightArrowColor, setRightArrowColor] = useState('#C3B6B6');
@@ -38,7 +42,7 @@ const Slider = ({ sliderInfo }) => {
   return (
     <div className={styles.sliderWrap}>
       <div className={styles.buttonAndHeadingWrap}>
-        <h2>Heading</h2>
+        <h2>{t(`${teamHeading}`)}</h2>
         <div className={styles.buttonsWrap}>
           <button className={styles.sliderButton} 
           style={{ backgroundColor: leftButtonActive ? '#CE0002' : '#F1F1F1' }}
@@ -64,9 +68,9 @@ const Slider = ({ sliderInfo }) => {
           return (
             <div className={styles.slide} key={index}>
               <img src={picture} alt="No Image :(" />
-              <h4>{heading}</h4>
-              <h5>{subheading}</h5>
-              <p>{description}</p>
+              <h4>{t(`${heading}`)}</h4>
+              <h5>{t(`${subheading}`)}</h5>
+              <p>{t(`${description}`)}</p>
               <a href={link}></a>
             </div>
           );
