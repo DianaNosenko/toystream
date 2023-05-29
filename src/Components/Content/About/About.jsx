@@ -10,7 +10,7 @@ const About = () => {
 
     return (
         <div className={styles.aboutWrap}>
-            <Company/>
+            {/* <Company/> */}
             <Team/>
         </div>
     );

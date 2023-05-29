@@ -1,0 +1,66 @@
+@import '/src/variables';
+
+.sliderWrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: $sidebar-width;
+    padding-top: 200px;
+    width: 1300px;  
+}
+.buttonAndHeadingWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.buttonsWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.sliderButton {
+    background-color: #F1F1F1;
+    width: 67px;
+    height: 67px;
+    border: none;
+    cursor: pointer;
+}
+.sliderContainer {
+    display: flex;
+}
+.slide {
+    height: 425px;
+    width: 340px;
+}
+.slide img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+.slide h4 {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: black;
+    margin: 0;
+}
+.slide h5 {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+}
+.slide p {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color:#646464;
+}
+
+
