@@ -3,3 +3,12 @@
 .aboutWrap {
    height: calc(100% - $footer-height);
 } 
+
+.buttons {
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 50%;
+   margin-left: 90%;
+   
+}
