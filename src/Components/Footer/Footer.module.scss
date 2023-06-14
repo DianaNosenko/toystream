@@ -2,9 +2,10 @@
 
 .footerStyle {
     height:  $footer-height;
+    width: 100vw;
     background: #EFEFEF;
     display: flex;
-    position: sticky;
+    position: fixed;
     bottom: 0px;
     z-index: 100;
     justify-content: space-between;

@@ -1,14 +1,34 @@
 @import '/src/variables';
 
 .aboutWrap {
-   height: calc(100% - $footer-height);
+   height: 100vh;
 } 
-
-.buttons {
+.buttons{
    display: flex;
    flex-direction: column;
    position: fixed;
    top: 50%;
    margin-left: 90%;
-   
+   z-index: 100;
+   cursor: pointer;
+}
+
+.buttons a {
+   font-family: 'Proxima Nova';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: right;
+   text-transform: uppercase;
+   color: #646464;
+
+}
+.buttons span {
+   content: “ ”; 
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  color: red;
+  background-color: red;
 }

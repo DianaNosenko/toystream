@@ -1,13 +1,13 @@
 .headerStyle {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: transparent;
-    grid-area: h;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    z-index: 100;
 }
 
 .headerNav {

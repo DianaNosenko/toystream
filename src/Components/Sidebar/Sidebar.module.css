@@ -1,6 +1,6 @@
 .sidebarStyle {
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     justify-content: space-between;
     left: 92px;
