@@ -19,7 +19,7 @@ const Team = () => {
 
     return (
         <div className={styles.teamWrap}>
-            <Slider sliderInfo={sliderInfo} teamHeading={teamHeading}/>
+            <Slider className={styles.slider} sliderInfo={sliderInfo} teamHeading={teamHeading}/>
         </div>
     );
 }

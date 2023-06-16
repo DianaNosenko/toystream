@@ -1,0 +1,54 @@
+@import '/src/variables';
+
+.wrap {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right,#FFFFFF 50%,#D3D1E9 50%);  
+}
+.wrap::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - $sidebar-width);
+    height: 15vh;
+    background-color: #FFFFFF; 
+} 
+.contentWrap {
+    display: flex;
+    align-items: center;
+    margin-left: $sidebar-width;
+}
+.infoContainer {
+    max-width: 600px;
+}
+.textContainer {
+    font-style: normal;
+    :first-child{
+        font-family: 'ZonaPro';
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 85px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    :last-child {
+        font-family: 'Akrobat';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 65px;
+    }
+}
+
+.gamesMainButton {
+    width: 190px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :last-child {
+        margin-left: 10px;
+    }   
+}

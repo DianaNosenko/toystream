@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     margin-left: $sidebar-width;
-    padding-top: 200px;
+    padding-top: 100px;
     width: 1300px;  
 }
 .buttonAndHeadingWrap {
@@ -12,6 +12,14 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    h2 {
+        font-family: 'Zona Pro';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 85px;
+        text-transform: uppercase;
+    }
 }
 .buttonsWrap {
     display: flex;
@@ -33,8 +41,8 @@
     width: 340px;
 }
 .slide img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin-bottom: 15px;
 }
 .slide h4 {

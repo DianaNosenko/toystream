@@ -4,18 +4,15 @@
     flex-direction: column;
     justify-content: space-between;
     left: 92px;
-    top: 662px;
+    top: 620px;
     transform: translateY(-50%);
-
 }
-
 .sidebarIcons { 
     display: flex;
     flex-direction: column;
 }
 .sidebarIcons a {
     margin-top: 22px;
-
 }
 .sidebarIcons a img {
     width: 28px;

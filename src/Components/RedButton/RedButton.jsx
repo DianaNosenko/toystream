@@ -7,9 +7,9 @@ const RedButton = (props) => {
      const {t} = useTranslation();
     return (
         <div>
-            <Link  to={props.buttonLink}>
+            <Link  to={props.buttonLink} style={{ textDecoration: 'none' }}>
                 <button className={`${props.className} ${styles.RedButton}`}>
-                    {t(`${props.buttonText}`)}
+                    <span>{t(`${props.buttonText}`)}</span>
                     <img src={props.buttonArrowSrc} alt="#" srcset="" />
                 </button>
             </Link>

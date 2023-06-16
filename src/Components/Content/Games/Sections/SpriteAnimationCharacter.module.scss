@@ -1,0 +1,46 @@
+$pixel-size: 20;
+ 
+ .character {
+    width: calc(32px * $pixel-size);
+    height: calc(32px * $pixel-size);
+    overflow: hidden;
+    position: absolute;
+    margin-left: 40%;
+    margin-bottom: 20%;
+ }
+ 
+ .characterSpritesheet {
+    animation: moveSpritesheet 1s steps(4) infinite;
+    width: calc(128px * $pixel-size);
+    position: absolute;
+    
+ }
+ .characterShadow {
+    position: absolute;
+    width: calc(32px * $pixel-size);
+    height: calc(32px * $pixel-size);
+ }
+ 
+ .pixelart {
+    image-rendering: pixelated;
+ }
+ 
+ .faceRight {
+    top: calc(-32px * $pixel-size);
+ }
+ .faceUp {
+    top: calc(-64px * $pixel-size);
+ }
+ .faceLeft {
+    top: calc(-96px * $pixel-size);
+ }
+ 
+ 
+ @keyframes moveSpritesheet {
+    from {
+       transform: translate3d(0px,0,0)
+    }
+    to {
+       transform: translate3d(-100%,0,0)
+    }
+ }

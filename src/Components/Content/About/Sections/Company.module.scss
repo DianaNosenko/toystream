@@ -6,6 +6,15 @@
     padding-left: $sidebar-width;
     background: linear-gradient(to right,#FFFFFF 50%,#FFEA2F 50%);
 } 
+.companyWrap::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - $sidebar-width);
+    height: 15vh;
+    background-color: #FFFFFF; 
+}
 .companyLeftContainer {
     width: 600px;
     height: 512px;
@@ -17,7 +26,6 @@
     font-size: 72px;
     line-height: 85px;
     text-transform: uppercase;
-
 }
 .companyLeftContainer :last-child {
     font-family: 'Akrobat';
