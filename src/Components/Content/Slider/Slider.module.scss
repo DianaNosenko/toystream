@@ -13,12 +13,7 @@
     justify-content: space-between;
     margin-bottom: 50px;
     h2 {
-        font-family: 'ZonaPro';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 72px;
-        line-height: 85px;
-        text-transform: uppercase;
+        @extend .headingStyles;
     }
 }
 .buttonsWrap {

@@ -5,11 +5,7 @@
     background: linear-gradient(to right,#FFEA2F 60%,#FFFFFF 50%); 
 }
 .teamWrap::before {
-    content: '';
-    position: absolute;
+    @extend .bottomWhiteLineStyle;
     bottom: -100vh;
     left: 0;
-    width: calc(100% - $sidebar-width);
-    height: 15vh;
-    background-color: #ffffff; 
 }

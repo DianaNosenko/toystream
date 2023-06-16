@@ -7,13 +7,7 @@
     background: linear-gradient(to right,#FFFFFF 50%,#FFEA2F 50%);
 } 
 .companyWrap::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: calc(100% - $sidebar-width);
-    height: 15vh;
-    background-color: #FFFFFF; 
+    @extend .bottomWhiteLineStyle;
 }
 .companyLeftContainer {
     width: 600px;
@@ -21,18 +15,10 @@
     padding-top: $header-height;
 }
 .companyLeftContainer :first-child {
-    font-family: 'ZonaPro';
-    font-weight: 800;
-    font-size: 72px;
-    line-height: 85px;
-    text-transform: uppercase;
+    @extend .headingStyles;
 }
 .companyLeftContainer :last-child {
-    font-family: 'Akrobat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
+    @extend .subheadingStyles;
     padding-top: 40px;
 }
 .companyRightContainer {

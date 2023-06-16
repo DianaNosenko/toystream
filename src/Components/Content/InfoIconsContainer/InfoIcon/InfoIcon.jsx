@@ -6,9 +6,7 @@ const InfoIcon = (props) => {
     const {t} = useTranslation();
     return (
         <div className={styles.infoIconWrap}>
-            <div className={styles.iconContainer}
-            style={{ backgroundColor: props.iconColor }}
-            >
+            <div className={styles.iconContainer} style={{ backgroundColor: props.iconColor }}>
                 <img src={props.picture} alt="no image :(" />
             </div>
             <div className={styles.animatedFone} style={{ backgroundColor: props.animatedColor }}></div>

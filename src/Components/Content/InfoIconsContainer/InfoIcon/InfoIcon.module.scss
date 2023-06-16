@@ -3,7 +3,6 @@
 .infoIconWrap {
     width: 50%;
 }
-
 @keyframes animation {
     0% {
         transform: translate(0, 0);
@@ -21,15 +20,12 @@
         transform: translate(0, 0);
     }
 }
-
 .iconContainer {
     width: $cell-size;
     height: $cell-size;
     position: relative;
     z-index: 10;
-
 }
-
 .animatedFone {
     width: $cell-size;
     height: $cell-size;
@@ -38,7 +34,6 @@
     position: absolute;
     animation: animation 12s linear infinite;
 }
-
 .iconContainer img {
     position: absolute;
     top: 50%;
@@ -46,16 +41,12 @@
     transform: translate(-50%, -50%);
 }
 h2 {
-    font-family: Akrobat;
+    font-family: 'Akrobat';
     font-size: 44px;
     font-weight: 900;
     line-height: 55px;
 }
-
 h4 {
     color: #646464;
-    font-family: Akrobat;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 30px;   
+    @extend .subheadingStyles; 
 }

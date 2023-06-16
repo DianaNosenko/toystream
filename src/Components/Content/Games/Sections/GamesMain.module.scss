@@ -7,13 +7,7 @@
     background: linear-gradient(to right,#FFFFFF 50%,#D3D1E9 50%);  
 }
 .wrap::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: calc(100% - $sidebar-width);
-    height: 15vh;
-    background-color: #FFFFFF; 
+    @extend .bottomWhiteLineStyle;
 } 
 .contentWrap {
     display: flex;
@@ -26,22 +20,14 @@
 .textContainer {
     font-style: normal;
     :first-child{
-        font-family: 'ZonaPro';
-        font-weight: 800;
-        font-size: 72px;
-        line-height: 85px;
-        text-transform: uppercase;
+        @extend .headingStyles;
         margin-bottom: 40px;
     }
     :last-child {
-        font-family: 'Akrobat';
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 30px;
+        @extend .subheadingStyles;
         margin-bottom: 65px;
     }
 }
-
 .gamesMainButton {
     width: 190px;
     height: 90px;
