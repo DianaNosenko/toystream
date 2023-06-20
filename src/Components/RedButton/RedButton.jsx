@@ -9,7 +9,7 @@ const RedButton = (props) => {
         <div>
             <Link  to={props.buttonLink} style={{ textDecoration: 'none' }}>
                 <button className={`${props.className} ${styles.RedButton}`}>
-                    <span>{t(`${props.buttonText}`)}</span>
+                    <div>{t(`${props.buttonText}`)}</div>
                     <img src={props.buttonArrowSrc} alt="#" srcset="" />
                 </button>
             </Link>

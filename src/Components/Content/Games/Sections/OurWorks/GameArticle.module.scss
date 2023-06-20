@@ -1,0 +1,33 @@
+@import '/src/variables';
+
+.wrap {
+    width: calc(100% - (2 * $sidebar_width));
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+.info {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .heading {
+        @extend .headingStyles;
+    }
+    .description {
+        @extend .subheadingStyles;
+    }
+    .button {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.picture img{
+    width: 600px;
+    height: 600px;
+}

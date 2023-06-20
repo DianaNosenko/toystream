@@ -16,7 +16,7 @@ const Home = () => {
                         className={styles.homeMoreInfoButton}
                         buttonLink={'/about-us'}
                         buttonText={'Home_button'}
-                        buttonArrowSrc={"/homepage_arrow.svg"}
+                        buttonArrowSrc={"/Arrow_to_right.svg"}
                         />
                         <div className={styles.homeSubHeading}>{t('Home_subheading')}</div>
                     </section>

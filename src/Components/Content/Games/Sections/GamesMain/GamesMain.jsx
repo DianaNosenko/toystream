@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './GamesMain.module.scss' 
 import { useTranslation } from 'react-i18next';
-import RedButton from '../../../RedButton/RedButton';
+import RedButton from '../../../../RedButton/RedButton';
 import SpriteAnimation from './SpriteAnimationCharacter';
 
 const GamesMain = () => {
