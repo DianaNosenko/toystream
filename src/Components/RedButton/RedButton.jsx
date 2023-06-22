@@ -5,15 +5,35 @@ import { useTranslation } from 'react-i18next';
 
 const RedButton = (props) => {
      const {t} = useTranslation();
+     const {buttonLink, className, buttonText, buttonArrowSrc, setActive} = props;
+
+     const buttonContent = () => {
+        return (
+            <>
+                <div>{t(`${buttonText}`)}</div>
+                <img src={buttonArrowSrc} alt="#" srcset="" />
+            </>
+        )
+     }
+     const buttonIfActive = () => {
+        return (
+            <button  className={`${className} ${styles.RedButton}`} onClick={() => {props.setActive(true)}}>
+                {buttonContent()}
+            </button>
+        )
+     }
+     const buttonIfInactive = () => {
+        return (
+            <button  className={`${className} ${styles.RedButton}`}>
+                {buttonContent()}
+            </button>
+        )
+     }
+
     return (
-        <div>
-            <Link  to={props.buttonLink} style={{ textDecoration: 'none' }}>
-                <button className={`${props.className} ${styles.RedButton}`}>
-                    <div>{t(`${props.buttonText}`)}</div>
-                    <img src={props.buttonArrowSrc} alt="#" srcset="" />
-                </button>
-            </Link>
-        </div>
+        <Link  to={buttonLink} style={{ textDecoration: 'none'}}>
+            {setActive? buttonIfActive() : buttonIfInactive()}
+        </Link>
     );
 }
 

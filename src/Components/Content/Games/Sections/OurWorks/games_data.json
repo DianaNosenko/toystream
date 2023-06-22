@@ -5,7 +5,8 @@
       "heading": "Design Masters",
       "description1": "Games_Design_Masters_description_1",
       "description2": "Games_Design_Masters_description_2",
-      "link": "#"
+      "linkGooglePlay": "#",
+      "linkAppStore": "#"
     },
     {
       "id": 2,
@@ -13,7 +14,8 @@
       "heading": "Perfect Makeup 3D",
       "description1": "Games_Perfect_Makeup_3D_description_1",
       "description2": "Games_Perfect_Makeup_3D_description_2",
-      "link": "#"
+      "linkGooglePlay": "#",
+      "linkAppStore": "#"
     },
     {
       "id": 3,
@@ -21,14 +23,16 @@
       "heading": "Escape Masters",
       "description1": "Games_Escape_Masters_description_1",
       "description2": "Games_Escape_Masters_description_2",
-      "link": "#"
+      "linkGooglePlay": "#",
+      "linkAppStore": "#"
     },
     {
-        "id": 4,
-        "image": "/GamesPage/Hitmasters.png",
-        "heading": "Hitmasters",
-        "description1": "Games_Hitmasters_description_1",
-        "description2": "Games_Hitmasters_description_2",
-        "link": "#"
+      "id": 4,
+      "image": "/GamesPage/Hitmasters.png",
+      "heading": "Hitmasters",
+      "description1": "Games_Hitmasters_description_1",
+      "description2": "Games_Hitmasters_description_2",
+      "linkGooglePlay": "#",
+      "linkAppStore": "#"
       }
   ]

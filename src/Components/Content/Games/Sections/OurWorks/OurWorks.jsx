@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './OurWorks.module.scss' 
 import GameArticle from './GameArticle';
-import data from './data.json';
+import data from './games_data.json';
 import { useTranslation } from 'react-i18next';
 
 const OurWorks = () => {
@@ -17,7 +17,8 @@ const OurWorks = () => {
                     heading={component.heading}
                     description1={t(component.description1)}
                     description2={t(component.description2)}
-                    link={component.link}
+                    linkGooglePlay={component.linkGooglePlay}
+                    linkAppStore={component.linkAppStore}
                     />
                 </div>
             ))}    
@@ -26,3 +27,4 @@ const OurWorks = () => {
 }
 
 export default OurWorks;
+

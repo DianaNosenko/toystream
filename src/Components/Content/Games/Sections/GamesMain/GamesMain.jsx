@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './GamesMain.module.scss' 
 import { useTranslation } from 'react-i18next';
 import RedButton from '../../../../RedButton/RedButton';
