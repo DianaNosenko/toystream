@@ -1,7 +1,7 @@
 @import '/src/variables';
 
 .wrap {
-    width: calc(100% - (2 * $sidebar_width));
+    width: calc(100vw - (2 * $sidebar_width));
     height: 600px;
     display: flex;
     justify-content: space-between;

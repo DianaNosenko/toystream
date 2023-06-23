@@ -10,7 +10,6 @@
     margin-top: $header-height;
 }
 .reverse {
-    :last-child {
-        flex-direction: row-reverse;
-    }
+    flex-direction: row-reverse;
 }
+

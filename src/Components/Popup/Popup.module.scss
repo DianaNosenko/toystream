@@ -13,7 +13,9 @@
 }
 .popupActive {
     transform: scale(1);
-
+}
+.scrollLock {
+    overflow: hidden;
 }
 .content {
     background-color: white;

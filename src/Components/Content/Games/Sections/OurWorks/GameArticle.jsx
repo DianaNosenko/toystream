@@ -33,25 +33,28 @@ const GameArticle = (props) => {
         )
     }
     return (
-        <div className={styles.wrap}>
+        <>
+            <div className={`${styles.wrap} ${reverse}`}>
                 <div className={styles.info}>
-                    <div className={styles.heading}>{t(`${heading}`)}</div>
-                    <div className={styles.description}>{t(`${description1}`)} <br/><br/> {t(`${description2}`)}</div>
-                    <RedButton
-                    className={`${styles.homeMoreInfoButton} ${styles.button}`}
-                    setActive = {setActive}
-                    buttonText={t('Games_more_button')}
-                    buttonArrowSrc={"/Arrow_to_right.svg"}/>
-                    </div>
+                        <div className={styles.heading}>{t(`${heading}`)}</div>
+                        <div className={styles.description}>{t(`${description1}`)} <br/><br/> {t(`${description2}`)}</div>
+                        <RedButton
+                        className={`${styles.homeMoreInfoButton} ${styles.button}`}
+                        setActive = {setActive}
+                        buttonText={t('Games_more_button')}
+                        buttonArrowSrc={"/Arrow_to_right.svg"}/>
+                </div>
                 <div className={styles.picture}><img src={picture} alt="No Image :(" /></div>
+            </div>
                 <Popup 
                 active={active} 
                 setActive={setActive} 
                 className={styles.popupStyles} 
                 PopupContent={PopupContent}
                 />
-        </div>
+        </>
     );
 }
 
 export default GameArticle;
+

@@ -19,6 +19,7 @@ const OurWorks = () => {
                     description2={t(component.description2)}
                     linkGooglePlay={component.linkGooglePlay}
                     linkAppStore={component.linkAppStore}
+                    reverse={index % 2 === 0 ? '' : styles.reverse}
                     />
                 </div>
             ))}    
@@ -27,4 +28,9 @@ const OurWorks = () => {
 }
 
 export default OurWorks;
+
+
+
+
+
 
