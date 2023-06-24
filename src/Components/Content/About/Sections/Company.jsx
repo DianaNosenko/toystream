@@ -19,18 +19,20 @@ const Company = () => {
     const iconColor = '#E8D935';
     const animatedColor = '#F2E33A';
     return (
-            <div className={styles.companyWrap}>
-                    <div className={styles.companyLeftContainer}>
-                        <div>{t('About_heading')}</div>
-                        <div>{t('About_subheading')}</div>
+            <div className={styles.wrap}>
+                <div className={styles.contentWrap}>
+                    <div className={styles.companyInfoContainer}>
+                            <h2>{t('About_heading')}</h2>
+                            <h4>{t('About_subheading')}</h4>
+                        </div>
+                        <div className={styles.companyIconsContainer}>
+                            <InfoIconContainer 
+                            iconsDataArray={iconsDataArray} 
+                            iconColor={iconColor} 
+                            animatedColor={animatedColor}
+                            />
+                        </div>    
                     </div>
-                    <div className={styles.companyRightContainer}>
-                        <InfoIconContainer 
-                        iconsDataArray={iconsDataArray} 
-                        iconColor={iconColor} 
-                        animatedColor={animatedColor}
-                        />
-                    </div>    
                 </div>
             );
         }

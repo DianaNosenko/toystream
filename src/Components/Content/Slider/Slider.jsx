@@ -68,8 +68,8 @@ const Slider = (props) => {
           return (
             <div className={styles.slide} key={index}>
               <img src={picture} alt="No Image :(" />
-              <h4>{t(`${heading}`)}</h4>
-              <h5>{t(`${subheading}`)}</h5>
+              <h2>{t(`${heading}`)}</h2>
+              <h4>{t(`${subheading}`)}</h4>
               <p>{t(`${description}`)}</p>
               <a href={link}></a>
             </div>

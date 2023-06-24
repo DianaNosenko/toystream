@@ -2,6 +2,9 @@
 
 .teamWrap {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right,#FFEA2F 60%,#FFFFFF 50%); 
 }
 .teamWrap::before {

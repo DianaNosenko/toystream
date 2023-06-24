@@ -2,6 +2,17 @@
 
 .infoIconWrap {
     width: 50%;
+    h2 {
+        font-family: 'Akrobat';
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 55px;
+        margin-top: 25px;
+    }
+    h4 {
+        color: #646464;
+        @extend .subheadingStyles; 
+    }
 }
 @keyframes animation {
     0% {
@@ -39,14 +50,4 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-h2 {
-    font-family: 'Akrobat';
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 55px;
-}
-h4 {
-    color: #646464;
-    @extend .subheadingStyles; 
 }

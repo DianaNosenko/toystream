@@ -10,12 +10,8 @@ const About = () => {
     const {t} = useTranslation();
     return(
         <div className={styles.aboutWrap}>
-            <div className={styles.buttons}>
-                    <a>{t('About_button')} <span className="square"></span></a>
-                    <a>{t('Team_button')}<span className="square"></span></a>
-            </div>
-                <Company/>
-                <Team/>
+            <Company/>
+            <Team/>
         </div>
 
     );

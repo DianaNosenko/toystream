@@ -1,11 +1,8 @@
 @import '/src/variables.scss';
 
 .container {
-    width: 570px;
-    height: 500px;
+    width: inherit;
+    height: inherit;
     display: flex;
     flex-wrap: wrap;
-    padding-left: $indent-size;
-    padding-top: $indent-size;
-
 }
