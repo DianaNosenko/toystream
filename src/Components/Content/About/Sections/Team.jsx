@@ -1,12 +1,11 @@
 import React from 'react';
 import Slider from '../../Slider/Slider';
 import styles from './Team.module.scss' 
-import { useTranslation } from 'react-i18next';
 
 const Team = () => {
-    const {t} = useTranslation();
 
     const teamHeading = `Team_main_heading`;
+    const sliderQuantity = 4;
     const sliderInfo = [];
     for (let i = 1; i <= 4; i++){
             sliderInfo.push({
@@ -16,10 +15,9 @@ const Team = () => {
                 description: `Team_description_${i}`
             })
     }    
-
     return (
         <div className={styles.teamWrap}>
-            <Slider className={styles.slider} sliderInfo={sliderInfo} teamHeading={teamHeading}/>
+            <Slider sliderStyles={styles.slider} sliderInfo={sliderInfo} sliderHeading={teamHeading} sliderQuantity={sliderQuantity}/>
         </div>
     );
 }

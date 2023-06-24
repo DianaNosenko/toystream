@@ -3,7 +3,7 @@ import styles from './Slider.module.scss'
 import { useTranslation } from 'react-i18next';
 
 const Slider = (props) => {
-  const {sliderInfo, teamHeading} = props;
+  const {sliderInfo, sliderHeading, sliderStyles, sliderQuantity, isButtonExist, redButtonProps} = props;
   const {t} = useTranslation();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,17 +32,29 @@ const Slider = (props) => {
     }, 200);
   };
 
-  const visibleSlides = [
+  const visibleFourSlides = [
     currentIndex === 0 ? sliderInfo.length - 1 : currentIndex - 1,
     currentIndex,
     (currentIndex + 1) % sliderInfo.length,
     (currentIndex + 2) % sliderInfo.length
   ];
 
+  const visibleThreeSlides = [
+    currentIndex === 0 ? sliderInfo.length - 1 : currentIndex - 1,
+    currentIndex,
+    (currentIndex + 1) % sliderInfo.length
+  ];
+  const visibleSlides = sliderQuantity === 4 ? visibleFourSlides : visibleThreeSlides;
+  const addButton = () => {
+    return (
+      redButtonProps()
+    )
+  }
+
   return (
     <div className={styles.sliderWrap}>
       <div className={styles.buttonAndHeadingWrap}>
-        <h2>{t(`${teamHeading}`)}</h2>
+        <h2>{t(`${sliderHeading}`)}</h2>
         <div className={styles.buttonsWrap}>
           <button className={styles.sliderButton} 
           style={{ backgroundColor: leftButtonActive ? '#CE0002' : '#F1F1F1' }}
@@ -51,7 +63,6 @@ const Slider = (props) => {
               <path fill={leftArrowColor} d="M0.292893 7.29289C-0.0976314 7.68342 -0.0976315 8.31658 0.292892 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31946 8.07107 0.928931C7.68054 0.538406 7.04738 0.538406 6.65686 0.92893L0.292893 7.29289ZM26 7L1 7L1 9L26 9L26 7Z" />
             </svg>
           </button>
-
           <button className={styles.sliderButton}
           style={{ backgroundColor: rightButtonActive ? '#CE0002' : '#F1F1F1' }} 
           onClick={goToNextSlide}>
@@ -66,12 +77,12 @@ const Slider = (props) => {
         {visibleSlides.map((slideIndex, index) => {
           const { picture, heading, subheading, description, link } = sliderInfo[slideIndex];
           return (
-            <div className={styles.slide} key={index}>
+            <div className={sliderStyles} key={index}>
               <img src={picture} alt="No Image :(" />
               <h2>{t(`${heading}`)}</h2>
               <h4>{t(`${subheading}`)}</h4>
               <p>{t(`${description}`)}</p>
-              <a href={link}></a>
+              {isButtonExist ? addButton() : ''}
             </div>
           );
         })}
