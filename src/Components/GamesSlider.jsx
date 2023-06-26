@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import styles from './Slider.module.scss' 
+import styles from './GamesSlider.module.scss' 
 import { useTranslation } from 'react-i18next';
-import Popup from '../../Popup/Popup';
+import GameSlide from './GameSlide';
 
-const Slider = (props) => {
-  const {sliderInfo, sliderHeading, sliderStyles, sliderQuantity, isButtonExist, redButtonProps, setPopup} = props;
+const GamesSlider = (props) => {
+  const {sliderInfo, setActive, setActiveSlide} = props;
   const {t} = useTranslation();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,24 +33,16 @@ const Slider = (props) => {
     }, 200);
   };
 
-  const visibleFourSlides = [
-    currentIndex === 0 ? sliderInfo.length - 1 : currentIndex - 1,
-    currentIndex,
-    (currentIndex + 1) % sliderInfo.length,
-    (currentIndex + 2) % sliderInfo.length
-  ];
-
-  const visibleThreeSlides = [
+  const visibleSlides = [
     currentIndex === 0 ? sliderInfo.length - 1 : currentIndex - 1,
     currentIndex,
     (currentIndex + 1) % sliderInfo.length
   ];
-  const visibleSlides = sliderQuantity === 4 ? visibleFourSlides : sliderQuantity === 3 ? visibleThreeSlides: '';
 
   return (
     <div className={styles.sliderWrap}>
       <div className={styles.buttonAndHeadingWrap}>
-        <h2>{t(`${sliderHeading}`)}</h2>
+        <h2>{t(`Games_Slider_Heading`)}</h2>
         <div className={styles.buttonsWrap}>
           <button className={styles.sliderButton} 
           style={{ backgroundColor: leftButtonActive ? '#CE0002' : '#F1F1F1' }}
@@ -71,19 +63,15 @@ const Slider = (props) => {
       
     <div className={styles.sliderContainer}>
       {visibleSlides.map((slideIndex) => {
-        const { image, heading, subheading, description1, description2} = sliderInfo[slideIndex];
         return (
-        <div className={sliderStyles} key={slideIndex}>
-          <img src={image} alt={heading}/>
-          <h2>{t(`${heading}`)}</h2>
-          {subheading === undefined ? '' : <h4>{t(`${subheading}`)}</h4>}
-          <p>{t(`${description1}`)}</p>
-          {description2 === undefined ? '' : <p>{t(`${description2}`)}</p>}
-          {isButtonExist ? redButtonProps() : ''}
-          {isButtonExist ? setPopup(
-            {...sliderInfo[slideIndex]}
-          ) : ''}
-        </div>
+           <GameSlide
+              sliderStyles={styles.slider} 
+              data = {sliderInfo[slideIndex]}
+              setActive = {setActive}
+              setActiveSlide={setActiveSlide}
+              index={slideIndex}
+              key={slideIndex}
+          />
         );
       })}  
   </div>  
@@ -91,5 +79,5 @@ const Slider = (props) => {
   );
 };
 
-export default Slider;
+export default GamesSlider;
  

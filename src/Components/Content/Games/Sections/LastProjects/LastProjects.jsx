@@ -1,48 +1,31 @@
 import React, {useState} from 'react';
 import styles from './LastProjects.module.scss' 
-import Slider from './../../../Slider/Slider'
-import { useTranslation } from 'react-i18next';
-import RedButton from '../../../../RedButton/RedButton';
-import Popup from '../../../../Popup/Popup';
+import data from './../OurWorks/games_data.json';
+import GamesSlider from '../../../../GamesSlider';
+import LastProjectPopup from '../../../../LastProjectPopup';
 
 const LastProjects = () => {
-    const {t} = useTranslation();
     const [active, setActive] = useState(false);
-
-    const teamHeading = `Team_main_heading`;
-    const sliderQuantity = 3;
-    const isButtonExist = true;
-    const sliderInfo = [];
-    for (let i = 1; i <= 4; i++){
-            sliderInfo.push({
-                picture: `/TeamPictures/Team_${i}.svg`,
-                heading: `Team_heading_${i}`,
-                subheading: `Team_subheading_${i}`,
-                description: `Team_description_${i}`
-            })
-    }  
- 
-    const redButtonProps = () => {
-        return (
-            <RedButton
-                className={`${styles.button}`}
-                setActive = {setActive}
-                buttonText={t('Games_more_button')}
-                buttonArrowSrc={"/Arrow_to_right.svg"}/>
-        )
-    }
+    const [activeSlide, setActiveSlide] = useState(0)
+    const worksSliderHeading = `Games_Slider_Heading`;
     return (
         <div className={styles.wrap}>
-            <Slider 
+               <GamesSlider 
                 sliderStyles={styles.slider} 
-                sliderInfo={sliderInfo} 
-                sliderHeading={teamHeading} 
-                sliderQuantity={sliderQuantity} 
-                isButtonExist={isButtonExist}
-                redButtonProps={redButtonProps}
-            />
+                sliderInfo={data} 
+                sliderHeading={worksSliderHeading} 
+                setActiveSlide={setActiveSlide}
+                setActive={setActive}
+                />
+                <LastProjectPopup 
+                active={active} 
+                setActive={setActive} 
+                sliderInfo={data}
+                activeSlide={activeSlide}
+                />
         </div>
     );
 }
 
 export default LastProjects;
+

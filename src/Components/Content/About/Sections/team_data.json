@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "image": "/TeamPictures/Team_1.svg",
+      "heading": "Team_heading_1",
+      "subheading": "Team_subheading_1",
+      "description1": "Team_description_1"
+    },
+    {
+        "id": 2,
+        "image": "/TeamPictures/Team_2.svg",
+        "heading": "Team_heading_2",
+        "subheading": "Team_subheading_2",
+        "description1": "Team_description_2"
+      },
+      {
+        "id": 3,
+        "image": "/TeamPictures/Team_3.svg",
+        "heading": "Team_heading_3",
+        "subheading": "Team_subheading_3",
+        "description1": "Team_description_3"
+      },
+      {
+        "id": 4,
+        "image": "/TeamPictures/Team_4.svg",
+        "heading": "Team_heading_4",
+        "subheading": "Team_subheading_4",
+        "description1": "Team_description_4"
+      }
+]

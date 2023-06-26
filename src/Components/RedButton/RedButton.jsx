@@ -11,13 +11,13 @@ const RedButton = (props) => {
         return (
             <>
                 <div>{t(`${buttonText}`)}</div>
-                <img src={buttonArrowSrc} alt="#" srcset="" />
+                <img src={buttonArrowSrc} alt="#" srcSet="" />
             </>
         )
      }
      const buttonIfActive = () => {
         return (
-            <button  className={`${className} ${styles.RedButton}`} onClick={() => {props.setActive(true)}}>
+            <button  className={`${className} ${styles.RedButton}`} onClick={() => {props.setActive(true); props.setSlideHandler()}}>
                 {buttonContent()}
             </button>
         )

@@ -1,0 +1,31 @@
+@import '/src/variables';
+
+.sliderWrap {
+    width: 1300px;  
+}
+.buttonAndHeadingWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    h2 {
+        @extend .headingStyles;
+    }
+}
+.buttonsWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.sliderButton {
+    background-color: #F1F1F1;
+    width: 67px;
+    height: 67px;
+    border: none;
+    cursor: pointer;
+}
+.sliderContainer {
+    display: flex;
+}
+
+
