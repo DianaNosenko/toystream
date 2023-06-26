@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Slider.module.scss' 
 import { useTranslation } from 'react-i18next';
-import Popup from '../../Popup/Popup';
 
 const Slider = (props) => {
   const {sliderInfo, sliderHeading, sliderStyles, sliderQuantity, isButtonExist, redButtonProps, setPopup} = props;

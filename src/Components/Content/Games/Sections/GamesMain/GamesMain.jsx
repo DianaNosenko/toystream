@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './GamesMain.module.scss' 
 import { useTranslation } from 'react-i18next';
 import RedButton from '../../../../RedButton/RedButton';
@@ -15,10 +15,10 @@ const GamesMain = () => {
                         <div>{t('Games_main_subheading1')} <br/> <br/> {t('Games_main_subheading2')}</div>
                     </div>
                     <RedButton 
-                            className={styles.gamesMainButton}
-                            buttonLink={'/games'}
-                            buttonText={'Games_main_button'}
-                            buttonArrowSrc={"/Arrow_to_bottom.svg"}
+                        className={styles.gamesMainButton}
+                        buttonLink={'/games'}
+                        buttonText={'Games_main_button'}
+                        buttonArrowSrc={"/Arrow_to_bottom.svg"}
                     />
                 </div>
                 <SpriteAnimation/>

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import GameSlide from './GameSlide';
 
 const GamesSlider = (props) => {
-  const {sliderInfo, setActive, setActiveSlide} = props;
+  const {sliderInfo} = props;
   const {t} = useTranslation();
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -67,8 +67,6 @@ const GamesSlider = (props) => {
            <GameSlide
               sliderStyles={styles.slider} 
               data = {sliderInfo[slideIndex]}
-              setActive = {setActive}
-              setActiveSlide={setActiveSlide}
               index={slideIndex}
               key={slideIndex}
           />

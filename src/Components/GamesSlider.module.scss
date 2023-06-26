@@ -1,13 +1,13 @@
 @import '/src/variables';
 
 .sliderWrap {
-    width: 1300px;  
+  margin-top: $header-height;
 }
 .buttonAndHeadingWrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     h2 {
         @extend .headingStyles;
     }
@@ -25,7 +25,9 @@
     cursor: pointer;
 }
 .sliderContainer {
+    width: 1400px;
     display: flex;
+    justify-content: space-between;
 }
 
 

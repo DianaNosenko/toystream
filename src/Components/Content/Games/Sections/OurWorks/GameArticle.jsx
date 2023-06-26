@@ -1,60 +1,46 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './GameArticle.module.scss';
 import { useTranslation } from 'react-i18next';
 import RedButton from '../../../../RedButton/RedButton';
-import Popup from '../../../../Popup/Popup';
+import { setActive, setActiveSlide } from '../../../../../redux/actions/actionCreator';
+import { connect } from 'react-redux';
 
 const GameArticle = (props) => {
     const {t} = useTranslation();
-    const [active, setActive] = useState(false);
-    const {picture, heading, description1, description2, linkAppStore, linkGooglePlay, reverse} = props;
+    
+    const {data, reverse, index} = props;
+    const {image, heading, description1, description2} = data;
+    const {setActive, setActiveSlide} = props;
 
-    const PopupContent = () => {
-        return(
-            <div className={styles.popupWrap}>
-            <div className={styles.popupInfo}>
-                <h2>{heading}</h2>
-                <p>{description1}<br/><br/>{description2}</p>
-            </div>
-            <div className={styles.popupImages}>
-                <div className={styles.imgContainer}>
-                    <img src={picture} alt={heading} />
-                </div>
-                <div className={styles.linksContainer}>
-                    <a rel="nofollow" href={linkGooglePlay}>
-                        <img src="/Google_Play.png" alt="Goole Play Link"/>
-                    </a>
-                    <a rel="nofollow" href={linkAppStore}>
-                        <img src="/App_Store.png" alt="App Store Link"/>
-                    </a>
-                </div>
-            </div>
-            </div>
-        )
+    const setSlideHandler = () => {
+        setActiveSlide(index)
     }
     return (
-        <>
             <div className={`${styles.wrap} ${reverse}`}>
                 <div className={styles.info}>
                         <div className={styles.heading}>{t(`${heading}`)}</div>
                         <div className={styles.description}>{t(`${description1}`)} <br/><br/> {t(`${description2}`)}</div>
                         <RedButton
-                        className={`${styles.homeMoreInfoButton} ${styles.button}`}
+                        className={styles.button}
                         setActive = {setActive}
+                        setSlideHandler={setSlideHandler}
                         buttonText={t('Games_more_button')}
                         buttonArrowSrc={"/Arrow_to_right.svg"}/>
                 </div>
-                <div className={styles.picture}><img src={picture} alt="No Image :(" /></div>
+                <div className={styles.picture}><img src={image} alt={t(`${heading}`)} /></div>
             </div>
-                <Popup 
-                active={active} 
-                setActive={setActive} 
-                className={styles.popupStyles} 
-                PopupContent={PopupContent}
-                />
-        </>
     );
 }
+    const mapDispatchToProps = {
+        setActive,
+        setActiveSlide
+    }
+    const mapStateToProps = (state) => {
+        return {
+            active: state.buttonReducer.active,
+            activeSlide: state.sliderReducer.activeSlide
+        } 
+    }
 
-export default GameArticle;
+export default connect(mapStateToProps, mapDispatchToProps)(GameArticle);
 

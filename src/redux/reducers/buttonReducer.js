@@ -9,7 +9,7 @@ const buttonReducer = (state = initialState, action) => {
         case SET_ACTIVE:
             return {
                 ...state,
-                action: action.isActive
+                active: action.isActive
             };
             default:
                 return state;

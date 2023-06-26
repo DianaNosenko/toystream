@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 
 const Header = (props) => {
     const {lang, setLang} = props;
-   
     const langSwitcher = () => {
         if (lang === 'en') {
             setLang('ru');
