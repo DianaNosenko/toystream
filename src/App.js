@@ -1,8 +1,8 @@
 import styles from'./App.module.scss';
-import Content from './Components/Content/Content';
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
-import Sidebar from './Components/Sidebar/Sidebar';
+import Content from './Components/Structure/Content/Content';
+import Footer from './Components/Structure/Footer/Footer';
+import Header from './Components/Structure/Header/Header';
+import Sidebar from './Components/Structure/Sidebar/Sidebar';
 import {BrowserRouter} from 'react-router-dom'
 
 const App = () => {

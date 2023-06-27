@@ -1,0 +1,24 @@
+.headingStyles{
+    font-family: 'ZonaPro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 85px;
+    text-transform: uppercase;
+}
+.subheadingStyles {
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+}
+.bottomWhiteLineStyle{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: #FFFFFF; 
+}

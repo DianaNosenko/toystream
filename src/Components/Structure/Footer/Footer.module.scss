@@ -1,0 +1,36 @@
+@import '/src/scss/variables';
+
+.footerStyle {
+    height:  $footer-height;
+    width: 100vw;
+    background: #EFEFEF;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 16px;
+}
+
+.footerNav {
+    width: 516px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerNav a {
+    color: #7E7E7E;
+    text-decoration: none;
+}
+
+.footerIcons {
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+.footerIcons a img {
+    width: 21px;
+}

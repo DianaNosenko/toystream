@@ -1,0 +1,43 @@
+@import '/src/scss/variables';
+@import '/src/scss/mixins';
+
+.wrap {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right,#FFFFFF 50%,#D3D1E9 50%);  
+}
+.wrap::before {
+    @extend .bottomWhiteLineStyle;
+} 
+.contentWrap {
+    display: flex;
+    align-items: center;
+    margin-left: $sidebar-width;
+}
+.infoContainer {
+    max-width: 600px;
+    text-align: justify;
+}
+.textContainer {
+    font-style: normal;
+    :first-child{
+        @extend .headingStyles;
+        margin-bottom: 40px;
+    }
+    :last-child {
+        @extend .subheadingStyles;
+        margin-bottom: 65px;
+    }
+}
+.gamesMainButton {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+    :last-child {
+        margin-left: 10px;
+    }   
+}
