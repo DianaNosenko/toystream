@@ -12,4 +12,14 @@
 .reverse {
     flex-direction: row-reverse;
 }
-
+.button {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: $sidebar-width;
+    div {
+        margin-right: 15px;
+    }
+}
