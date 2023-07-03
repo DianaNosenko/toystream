@@ -53,7 +53,11 @@
 
     "Games_Slider_Heading":"Последние проекты",
 
-    "More_Projects_Button":"Больше проектов"
+    "More_Projects_Button":"Больше проектов",
+
+    "Career_main_heading": "Карьера в Toy.Stream",
+    "Career_main_subheading": "Мы всегда рады новым высококлассным специалистам геймдева, желающим присоединиться к нашей команде.",
+    "Career_main_button": "Вакансии"
 
 
 }
